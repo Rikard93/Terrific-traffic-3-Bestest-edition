@@ -9,7 +9,9 @@ class level(object):
         if node in self.nodes:
             res = []
             for x in self.roads:
-                if road.nodes[0] == node:
-                    res.append x
+                if x.nodes[0] == node:
+                    res.append(x)
             return res
-                    
+
+
+
