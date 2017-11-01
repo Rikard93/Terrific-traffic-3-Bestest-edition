@@ -19,4 +19,12 @@ class TrafficLight (object):
         self.is_green = False
         return self.possible_roads_red
 
-    def move
+     #returnerar posisisjonen til trafikklyset
+    def get_position(self):
+        return self.node.get_both_positions()
+
+    def get_x_position(self):
+        return self.node.get_x_position()
+
+    def get_y_position(self):
+        return self.node.get_y_position()
